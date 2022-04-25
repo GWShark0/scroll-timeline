@@ -1,10 +1,11 @@
+import { memo } from 'react';
 import { DraggableCore } from 'react-draggable';
 
 import { ReactComponent as PlayheadHandle } from 'assets/cursor.svg';
 
 import './Playhead.css';
 
-export default function Playhead(props) {
+function Playhead(props) {
   const { onDragStart, onDrag, onDragEnd, playheadX, scrollX } = props;
 
   const x = playheadX - scrollX;
@@ -18,3 +19,5 @@ export default function Playhead(props) {
     </DraggableCore>
   );
 }
+
+export default memo(Playhead);

@@ -1,8 +1,9 @@
 import { range } from 'lodash';
+import { memo } from 'react';
 
 import './Ruler.css';
 
-export default function Ruler(props) {
+function Ruler(props) {
   const { scrollX } = props;
 
   const rulerStyle = {
@@ -23,3 +24,5 @@ export default function Ruler(props) {
     </div>
   );
 }
+
+export default memo(Ruler);
