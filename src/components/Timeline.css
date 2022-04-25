@@ -1,0 +1,33 @@
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: var(--timeline-height);
+  background-color: var(--timeline-color);
+}
+
+.scroll-container {
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.track-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 8px;
+  padding-left: var(--timeline-left-padding);
+  width: var(--track-container-width);
+  height: var(--track-container-height);
+}
+
+.track {
+  height: var(--track-height);
+  border-radius: var(--border-radius);
+  background-color: var(--track-color);
+}
+
+.track:not(:last-child) {
+  margin-bottom: 8px;
+}

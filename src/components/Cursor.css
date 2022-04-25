@@ -1,0 +1,9 @@
+.cursor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--playhead-width);
+  background-color: var(--cursor-color);
+  pointer-events: none;
+}

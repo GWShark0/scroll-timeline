@@ -1,0 +1,39 @@
+.ruler-container {
+  position: relative;
+  height: var(--timeline-ruler-height);
+  background-color: var(--ruler-color);
+  overflow: hidden;
+}
+
+.ruler {
+  display: flex;
+  padding-left: var(--timeline-left-padding);
+  width: var(--track-container-width);
+  height: 100%;
+}
+
+.interval {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  border-left: 1px solid currentColor;
+}
+
+.interval::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 1px;
+  height: 25%;
+  background-color: currentColor;
+}
+
+.label {
+  margin-left: 8px;
+  font-size: 12px;
+}
