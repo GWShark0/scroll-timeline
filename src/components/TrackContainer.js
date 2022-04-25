@@ -1,4 +1,4 @@
-import { forwardRef } from 'react';
+import { forwardRef, memo } from 'react';
 import Item from './Item';
 import bird from 'assets/bird.jpg';
 import butterfly from 'assets/butterfly.jpg';
@@ -8,8 +8,9 @@ import squirrel from 'assets/squirrel.jpg';
 import turtle from 'assets/turtle.jpg';
 
 const TrackContainer = forwardRef((props, ref) => {
+  const { onClick } = props;
   return (
-    <div className="scroll-container" ref={ref}>
+    <div className="scroll-container" onClick={onClick} ref={ref}>
       <div className="track-container">
         <div className="track">
           <Item offset={200} thumb={dog} width={300} />
@@ -34,4 +35,4 @@ const TrackContainer = forwardRef((props, ref) => {
   );
 });
 
-export default TrackContainer;
+export default memo(TrackContainer);

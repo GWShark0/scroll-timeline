@@ -3,6 +3,7 @@
   height: var(--timeline-ruler-height);
   background-color: var(--ruler-color);
   overflow: hidden;
+  user-select: none;
 }
 
 .ruler {

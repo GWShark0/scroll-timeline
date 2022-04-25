@@ -1,15 +1,14 @@
 import { clamp } from 'lodash';
-import { useHoverDirty, useMouseHovered, useScroll } from 'react-use';
+import { useHoverDirty, useMouseHovered } from 'react-use';
 
 import { CONTENT_WIDTH, TIMELINE_LEFT_PADDING } from 'constants';
 
 import './Cursor.css';
 
 export default function Cursor(props) {
-  const { scrollRef, timelineRef } = props;
+  const { scrollX, timelineRef } = props;
   const isHovering = useHoverDirty(timelineRef);
   const { elX: mouseX } = useMouseHovered(timelineRef, { bound: true });
-  const { x: scrollX } = useScroll(scrollRef);
 
   if (!isHovering) {
     return null;

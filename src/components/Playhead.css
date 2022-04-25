@@ -1,0 +1,32 @@
+.playhead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--playhead-line-width);
+  background-color: var(--playhead-color);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 16px 2px;
+  cursor: grab;
+}
+
+.playhead:active {
+  cursor: grabbing;
+}
+
+.playhead:active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: calc(var(--playhead-handle-width) * 2);
+  transform: translateX(calc(-50% + var(--playhead-line-width) / 2));
+}
+
+.playhead-handle {
+  position: absolute;
+  top: 0;
+  width: var(--playhead-handle-width);
+  fill: var(--playhead-color);
+  transform: translateX(calc(-50% + var(--playhead-line-width) / 2));
+}

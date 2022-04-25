@@ -1,16 +1,12 @@
 import { range } from 'lodash';
-import { memo } from 'react';
-import { useScroll } from 'react-use';
 
 import './Ruler.css';
 
-function Ruler(props) {
-  const { scrollRef } = props;
-
-  const { x } = useScroll(scrollRef);
+export default function Ruler(props) {
+  const { scrollX } = props;
 
   const rulerStyle = {
-    transform: `translate3d(-${x}px, 0, 0)`,
+    transform: `translate3d(-${scrollX}px, 0, 0)`,
   };
 
   return (
@@ -27,5 +23,3 @@ function Ruler(props) {
     </div>
   );
 }
-
-export default memo(Ruler);

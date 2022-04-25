@@ -18,6 +18,7 @@
   --track-color: var(--grey-700);
   --item-color: var(--grey-600);
   --cursor-color: rgba(255, 255, 255, 0.4);
+  --playhead-color: #fcd34d;
 
   --border-radius: 0.25rem;
 
@@ -27,7 +28,8 @@
   --track-container-width: 3000px;
   --track-container-height: 500px;
   --track-height: 64px;
-  --playhead-width: 2px;
+  --playhead-line-width: 2px;
+  --playhead-handle-width: 12px;
 }
 
 html {

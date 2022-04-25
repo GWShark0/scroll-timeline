@@ -2,6 +2,7 @@
   height: var(--track-height);
   border-radius: var(--border-radius);
   background-color: var(--item-color);
+  cursor: pointer;
 }
 
 .thumbnails {
