@@ -36,9 +36,9 @@ export default function Timeline() {
   const handleDragEnd = useCallback((event) => setDragging(false), []);
 
   return (
-    <div className="timeline" ref={timelineRef}>
+    <div className="timeline" onClick={handlePlayhead} ref={timelineRef}>
       <Ruler scrollX={scrollX} />
-      <ScrollContainer ref={scrollRef} onClick={handlePlayhead} />
+      <ScrollContainer ref={scrollRef} />
       {!dragging && <Cursor scrollX={scrollX} timelineRef={timelineRef} />}
       <Playhead
         onDragStart={handleDragStart}
