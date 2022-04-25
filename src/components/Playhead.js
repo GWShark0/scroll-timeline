@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { DraggableCore } from 'react-draggable';
 
-import { ReactComponent as PlayheadHandle } from 'assets/cursor.svg';
+import { ReactComponent as PlayheadHandle } from '../assets/cursor.svg';
 
 import './Playhead.css';
 

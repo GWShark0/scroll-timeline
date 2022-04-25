@@ -12,8 +12,7 @@
     "react-dom": "^18.0.0",
     "react-draggable": "^4.4.4",
     "react-scripts": "5.0.1",
-    "react-use": "^17.3.2",
-    "styled-components": "^5.3.5"
+    "react-use": "^17.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,7 +1,7 @@
 import { clamp } from 'lodash';
 import { useHoverDirty, useMouseHovered } from 'react-use';
 
-import { CONTENT_WIDTH, TIMELINE_LEFT_PADDING } from 'constants';
+import { CONTENT_WIDTH, TIMELINE_LEFT_PADDING } from '../constants';
 
 import './Cursor.css';
 
